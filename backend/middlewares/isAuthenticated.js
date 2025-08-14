@@ -8,7 +8,8 @@ const isAuthenticated = async (req,res,next)=>{
                 success:false
             });
         }
-        const jwtSecret = process.env.JWT_SECRET;
+        const jwtSecret = 'hdjahfhdfhiewnhqxiwendewnniewirn4r';
+        
         if (!jwtSecret) {
             throw new Error('JWT_SECRET is not set');
         }
