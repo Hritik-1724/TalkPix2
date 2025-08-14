@@ -1,15 +1,15 @@
 {
-  "name": "backend",
+  "name": "talkpix-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for TalkPix Real-time Chatting App",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon backend/index.js",
-    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start":"node backend/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cd ../frontend && npm install && npm run build"
   },
-  "keywords": [],
+ "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
