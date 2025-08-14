@@ -11,6 +11,6 @@ export const getSocketUrl = () => {
   if (import.meta.env.VITE_SOCKET_URL) return import.meta.env.VITE_SOCKET_URL;
   if (apiBaseUrl) return apiBaseUrl;
   if (typeof window !== 'undefined' && window.location?.origin) return window.location.origin;
-  return 'http://localhost:3000';
+  return 'https://talkpix2.onrender.com';
 };
 

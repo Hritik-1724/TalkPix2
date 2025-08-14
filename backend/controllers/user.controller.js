@@ -58,7 +58,7 @@ export const login = async (req, res) => {
             });
         };
 
-        const jwtSecret = process.env.JWT_SECRET;
+        const jwtSecret = 'hdjahfhdfhiewnhqxiwendewnniewirn4r';
         const token = await jwt.sign({ userId: user._id }, jwtSecret, { expiresIn: '1d' });
 
         // populate each post if in the posts array
