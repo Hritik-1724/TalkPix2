@@ -8,7 +8,10 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors:{
-        origin: [process.env.CLIENT_URL, 'http://localhost:5173'].filter(Boolean),
+         origin: [
+      'http://localhost:5173',  // frontend local
+      'https://talkpix2.onrender.com' // frontend deployed
+    ],
         methods:['GET','POST'],
         credentials: true
     }

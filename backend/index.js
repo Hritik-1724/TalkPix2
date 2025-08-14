@@ -20,8 +20,7 @@ app.use(cookieParser());
 app.use(urlencoded({ extended: true }));
 
 const allowedOrigins = [
-    'http://localhost:5173',
-    process.env.CLIENT_URL
+    'https://talkpix2.onrender.com',
 ].filter(Boolean);
 
 app.use(cors({
